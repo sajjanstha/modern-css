@@ -11,41 +11,36 @@ a:hover {
     text-decoration: underline;
 }
 
+.section {
+    padding: 30px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-header {
-    background-image: linear-gradient(to right, #a25b5b, #693e4c);
-    padding: 1.5em 2em;
-}
-
-header h1 {
-    margin-top: 0;
-    font-size: 1.6em;
-}
-
-.header-top {
+.flex,
+.row {
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    color: white;
-    padding-bottom: 50px;
 }
 
-.header-top a {
-    color: inherit;
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
-nav {
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.box {
+    background: #e3e3e3;
+    height: 100px;
     display: flex;
     justify-content: center;
-}
-
-nav > a {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
 }
